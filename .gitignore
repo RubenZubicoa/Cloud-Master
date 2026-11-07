@@ -9,3 +9,5 @@ junit.xml
 .awcache
 .env
 server/public
+gh-pages-key
+gh-pages-key.pub
