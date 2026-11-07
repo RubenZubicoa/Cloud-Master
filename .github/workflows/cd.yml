@@ -12,6 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      - name: Use SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo ${{ secrets.SSH_PRIVATE_KEY }} > ~/.ssh/id_rsa
+          sudo chmod 600 ~/.ssh/id_rsa
+
       - name: Install
         run: npm ci
 
