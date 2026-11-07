@@ -20,7 +20,5 @@ jobs:
 
       - name: Deploy
         run: |
-          git config --global user.name "Ruben Zubicoa"
-          git config --global user.email "rubenzubicoatic@gmail.com"
           npm run deploy
 
