@@ -10,7 +10,6 @@
     "deploy": "gh-pages -d dist -r git@github.com:RubenZubicoa/Cloud-Master.git",
     "type-check": "tsc --noEmit --preserveWatchOutput",
     "type-check:watch": "npm run type-check -- --watch"
-    
   },
   "imports": {
     "#*": "./src/*"
