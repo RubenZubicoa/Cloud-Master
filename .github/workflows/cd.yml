@@ -18,10 +18,10 @@ jobs:
           echo ${{ secrets.SSH_PRIVATE_KEY }} > ~/.ssh/id_rsa
           sudo chmod 600 ~/.ssh/id_rsa
 
-    - name: Git config
-      run: |
-        git config --global user.name "Ruben Zubicoa"
-        git config --global user.email "rubenzubicoatic@gmail.com"
+      - name: Git config
+        run: |
+          git config --global user.name "Ruben Zubicoa"
+          git config --global user.email "rubenzubicoatic@gmail.com"
 
       - name: Install
         run: npm ci
